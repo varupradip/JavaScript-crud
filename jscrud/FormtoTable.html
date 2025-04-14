@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>javascript table</title>
+
+    <style>
+        table,tr,th,td{
+            border: 1px,dotted,black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="name" id="name">
+        <input type="email" name="email" id="email">
+        <input type="age" name="age" id="age">
+        <input type="number" name="number" id="number">
+        <input type="search" name="search" id="search" placeholder="search name">
+
+        <br>
+        <br>
+        <button type="button" onclick="datasubmit()">submit</button>
+        <button type="button" onclick="datasort()">sort</button>
+        <button type="button" onclick="datasearch()">search</button>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>name:</th>
+                    <th>email:</th>
+                    <th>age:</th>
+                    <th>number:</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <script src="./FormtoTable.js"></script>
+</body>
+
+</html>
